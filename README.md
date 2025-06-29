@@ -1,42 +1,42 @@
-# Backend para Aplicação para Restaurantes com Autenticação JWT e Autorização por Roles - Java / Spring Boot
+# Backend for Restaurant Application with JWT Authentication and Authorization by Roles - Java / Spring Boot
 
-Este projeto é um backend para uma aplicação para gerenciamento de restaurantes. Ele oferece funcionalidades como autenticação e autorização de usuários, utilizando tokens JWT (JSON Web Tokens) e um sistema de roles via RBAC. O backend é construído em Java / Spring Boot com o banco de dados MongoDB via Docker.
+This project is a backend for a restaurant management application. It offers features such as user authentication and authorization using JWT tokens (JSON Web Tokens) and a role system via RBAC. The backend is built in Java / Spring Boot with the MongoDB database via Docker.
 
-## Exemplos de Recursos
+## Feature Examples
 
-- **Autenticação de Usuário**: Sistema de login e registro de usuários.
-- **Autorização via JWT**: Após o login, os usuários recebem um token JWT para acessos subsequentes.
-- **Gerenciamento de Restaurantes**: Funcionalidades para adicionar, visualizar, editar e deletar items / pedidos, assim como gerenciar aspectos associados aos restaurantes.
+- **User authentication**: User login and registration system.
+- **Authorization via JWT**: After logging in, users receive a JWT token for subsequent access.
+- **Restaurant Management**: Functionalities for adding, viewing, editing and deleting items / orders, as well as managing aspects associated with restaurants.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **Java / Spring Boot**: Ambiente de execução do servidor.
-- **MongoDB**: Banco de dados NoSQL eficiente para armazenar os dados dos usuários e informações dos restaurantes e seus pedidos.
-- **JWT (JSON Web Tokens)**: Utilizado para a autenticação e autorização de usuários com base em roles.
+- **Java / Spring Boot**: Server execution environment.
+- **MongoDB**: Efficient NoSQL database for storing user data and information on restaurants and their orders.
+- **JWT (JSON Web Tokens)**: Used for authentication and authorization of users based on roles.
 
-## Documentação da API
+## API documentation
 
-A documentação completa das APIs está disponível no endpoint `/swagger-ui/index.html`. A documentação é interativa e permite testar os endpoints diretamente pela interface do Swagger.
+The full API documentation is available on the `/swagger-ui/index.html` endpoint. The documentation is interactive and allows you to test the endpoints directly via the Swagger interface.
 
-## Instruções de Instalação e Uso
+## Installation and Use Instructions
 
-1. Clone o repositório: `git clone [URL_DO_REPOSITORIO]`
+1. Clone the repository: `git clone [REPOSITORY_URL]`
 
-2. Navegue até a pasta do projeto e instale as dependências: `cd [NOME_DA_PASTA_DO_PROJETO]` e depois execute `mvn install` para gerar a atualização das dependências e o JAR da aplicação (caso desejar).
+2. Navigate to the project folder and install the dependencies: `cd [FOLDER_NAME].
 
-3. **Instalação do Docker / MongoDB** (Opcional):
-   - Baixe o Docker do site oficial: [Download Docker - Windows, por exemplo](https://docs.docker.com/desktop/install/windows-install/).
-   - Siga as instruções de instalação para o seu sistema operacional.
-   - Crie um novo banco de dados em um contâiner Docker utilizando estes comandos:
+3. **Install Docker / MongoDB** (Optional):
+   - Download Docker from the official website: [Download Docker - Windows, for example](https://docs.docker.com/desktop/install/windows-install/).
+   - Follow the installation instructions for your operating system.
+   - Create a new database in a Docker container using these commands:
    
    `docker pull mongo`
    
    `docker compose up -d`
    
-5. Inicie o servidor: execute a aplicação pela classe main da mesma na sua IDE preferida (recomendo Intellij IDEA Community ou Ultimate).
+5. Start the server: run the application from its main class in your preferred IDE (I recommend Intellij IDEA Community or Ultimate).
 
-6. Acesse `http://localhost:8080/swagger-ui/index.html` em seu navegador para visualizar a documentação da API.
+6. Go to `http://localhost:8080/swagger-ui/index.html` in your browser to view the API documentation.
 
 ---
 
-Desenvolvido com ❤️ por Samuel Baldasso
+Developed with ❤️ by Samuel Baldasso
